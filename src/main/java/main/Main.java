@@ -1,9 +1,6 @@
 package main;
 
-import sortingMethods.BubbleSort;
-import sortingMethods.InsertionSort;
-import sortingMethods.QuickSort;
-import sortingMethods.SelectionSort;
+import sortingMethods.*;
 
 import java.util.Arrays;
 
@@ -13,6 +10,7 @@ public class Main {
         int[] tab = {0, 3, 2, 7, 2, 12, 5, -4, 7};
         int[] tab1 = {0, 3, 2, 2, 5, -4};
         int[] tab2 = {9, 1, 2, 4, 5, 7, 8, 6, 3};
+        int[] tab3 = {9, 7, 4, 3, 6, 5, 1, 2, 8, 11};
 
 //        BubbleSort bubbleSort = new BubbleSort();
 //        bubbleSort.sort(tab);
@@ -28,10 +26,13 @@ public class Main {
 //        selectionSort.sort(tab);
 
 
-        QuickSort quickSort = new QuickSort();
-        quickSort.sort(tab);
+//        QuickSort quickSort = new QuickSort();
+//        quickSort.sort(tab);
 
-        System.out.println(Arrays.toString(tab));
+        HeapSort heapSort = new HeapSort();
+        heapSort.sort(tab3);
+
+        System.out.println(Arrays.toString(tab3));
     }
 
 
